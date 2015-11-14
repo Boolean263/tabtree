@@ -755,7 +755,7 @@ var windowListener = {
 		//////////////////// END DRAG FEEDBACK TREE ////////////////////////////////////////////////////////////////////
 
 		////////////////////////////////////////////// NEW TAB BUTTON //////////////////////////////////////////////////
-		let newTabContainer = aDOMWindow.document.createElement('vbox'); /* there is a problem with 'background-color' without a container*/
+		let newTabContainer = aDOMWindow.document.createElement('toolbox'); /* there is a problem with 'background-color' without a container*/
 		newTabContainer.id = 'tt-new-tab-button-container';
 		let newTab = aDOMWindow.document.createElement('toolbarbutton');
 		newTab.classList.add('tt-new-tab-button');

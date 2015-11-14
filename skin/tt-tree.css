@@ -24,6 +24,7 @@
 	}
 }
 
+/* This rule overrides user-theme rules for trees - known issue #35 */
 @media (-moz-windows-default-theme) {
 	#tt-treechildren,
 	#tt-treechildren-feedback {
@@ -145,17 +146,17 @@
 
 #tt-treechildren::-moz-tree-image(tt-close),
 #tt-treechildren-feedback::-moz-tree-image(tt-close) {
-	list-style-image: url(chrome://tabtree/skin/close.png);
+	list-style-image: url(chrome://global/skin/icons/close.png);
 	-moz-image-region: rect(0, 16px, 16px, 0);
 }
 
 #tt-treechildren::-moz-tree-image(tt-close, selected) {
-	list-style-image: url(chrome://tabtree/skin/close.png);
+	list-style-image: url(chrome://global/skin/icons/close.png);
 	-moz-image-region: rect(0, 48px, 16px, 32px);
 }
 
 #tt-treechildren::-moz-tree-image(tt-close, hover) {
-	list-style-image: url(chrome://tabtree/skin/close.png);
+	list-style-image: url(chrome://global/skin/icons/close.png);
 	-moz-image-region: rect(0, 32px, 16px, 16px);
 }
 
@@ -226,13 +227,8 @@
 
 /* New tab button */
 
-#tt-new-tab-button-container {
-	background-color: -moz-Dialog;
-}
-
 .tt-new-tab-button {
-	list-style-image: url(chrome://tabtree/skin/newtab.png);
-	/*list-style-image: url(chrome://browser/skin/tabbrowser/newtab-inverted.png);*/
+	list-style-image: url(chrome://browser/skin/tabbrowser/newtab.png);
 	-moz-image-region: auto;
 	padding: 0;
 }
